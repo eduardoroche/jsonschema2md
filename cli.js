@@ -64,7 +64,8 @@ const { argv } = Optimist
   .describe('p', 'A comma separated list with custom properties which should be also in the description of an element.')
   .alias('h', 'header')
   .describe('h', 'if the value is false the header will be skipped')
-  .default('h', true);
+  .default('h', true)
+  .alias('ex', 'external-link');
 
 const docs = _.fromPairs(
   _.toPairs(argv)
